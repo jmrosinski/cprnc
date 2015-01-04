@@ -94,8 +94,6 @@ program cprnc
         end if
       end if
     end do
-    write(6,101) t, totdiffs
-101 format ('Total diffs time slice ',i3,' are ',i10)
 !
 ! Now handle fields that are on the 2nd file but not the 1st (those also on the 1st were handled above)
 !
@@ -107,6 +105,8 @@ program cprnc
           call printstats1 (ncid(2), name2, n, t, nip(2))
         end if
       end do
+      write(6,101) t, totdiffs
+101   format ('Total diffs time slice ',i3,' are ',i10)
     end if
   end do
   stop

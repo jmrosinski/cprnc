@@ -192,12 +192,12 @@ contains
       write(6,205) avg(2)
     end if
 
-100 format (a4,1x,i9,1x,' (',i9,',',i3,')',' (',i9,',',i3,') ',1p,e8.1,' (',i9,',',i3,') ',e8.1)
-101 format (5x,   i9,2x,  1p,e14.7,          2x,e14.7,                   2x,e14.7)
-102 format (16x,          1p,e14.7,          2x,e14.7,                   2x,e14.7)
+100 format (a4,1x,i9,1x,' (',i9,',',i3,')',' (',i9,',',i3,') ',1p,e8.1,' (',i9,',',i3,') ',e8.1,' (',i9,',',i3,') ')
+101 format (5x,   i9,2x,  1p,e14.7,          2x,e14.7,                  11x,e14.7,               11x,e14.7)
+102 format (16x,          1p,e14.7,          2x,e14.7,                  11x,e14.7,               11x,e14.7)
 103 format (15x,        ' (',i9,',',i3,')',' (',i9,',',i3,') ')
-104 format ('avg abs field values:',1p,e14.7,'    rms ',a4,':',e10.3,' avg rel diff(npos):',e14.7)
-105 format (21x,                    1p,e14.7,24x,                  ' avg decimal digits(ndif):',0p,f4.1,' worst:',f4.1,/)
+104 format ('avg abs field values:',1p,e14.7,'    rms ',a4,':',e10.3,' avg rel diff(all points):',e14.7)
+105 format (21x,                    1p,e14.7,23x,                    ' avg decimal digits(ndif):',0p,f4.1,' worst:',f4.1,/)
 
 200 format (a4,1x,i9,1x,' (',i9,',',i3,')',' (',i9,',',i3,') ',1p,e8.1)
 201 format (5x,   i9,2x,  1p,e14.7,            2x,e14.7)
